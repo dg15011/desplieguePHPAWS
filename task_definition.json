@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:015662829901:task-definition/despliegue_aws_spring_family1:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:015662829901:task-definition/despliegue_aws_spring_fam:1",
     "containerDefinitions": [
         {
-            "name": "despliegue_aws_spring_cont2",
+            "name": "despliegue_aws_spring_cont1",
             "image": "015662829901.dkr.ecr.us-east-1.amazonaws.com/despliegue_aws_spring_app",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "despliegue_aws_spring_cont2-80-tcp",
+                    "name": "despliegue_aws_spring_cont1-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -22,7 +22,7 @@
             "ulimits": []
         }
     ],
-    "family": "despliegue_aws_spring_family1",
+    "family": "despliegue_aws_spring_fam",
     "taskRoleArn": "arn:aws:iam::015662829901:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::015662829901:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
@@ -52,7 +52,6 @@
         "FARGATE"
     ],
     "requiresCompatibilities": [
-        "EC2",
         "FARGATE"
     ],
     "cpu": "512",
@@ -61,7 +60,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-16T04:06:36.402Z",
+    "registeredAt": "2023-07-16T20:50:09.050Z",
     "registeredBy": "arn:aws:iam::015662829901:root",
     "tags": []
 }
